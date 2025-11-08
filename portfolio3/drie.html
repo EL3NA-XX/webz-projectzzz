@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="drie.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-4/css/all.min.css">
+</head>
+<body>
+
+  <!-- INTRO IMAGE -->
+  <div class="intro">
+    <img src="presshere.gif" alt="welcome">
+  </div>
+
+  <!-- MAIN SITE / HOMEPAGE -->
+  <main class="homepage hidden">
+
+    <div class="red-bar">
+      <div class="buttons">
+        <div> <a href="http://127.0.0.1:3000/drie.html"><p>Home</p></a></div>
+        <div> <a href="http://127.0.0.1:3000/aboutme.html"><p>about me</p></a></div>
+        <div> <a href="http://127.0.0.1:3000/blog.html?serverWindowId=52a4ddbb-ded1-4429-be8c-cca4a1f8d7f3"><p>blog</p></a></div>        
+      </div>
+    </div>
+
+        <!-- main portfolio image -->
+        <section class="portfolio">
+          <img src="Group 16.png" alt="portfolio">
+        </section>
+    
+        <!-- star gif -->
+        <div class="stargif"> <img src="3dgifmaker58915.gif"> </div>
+    
+    <!-- content container -->
+    <section class="container1">
+        <!-- contact info box -->
+        <div class="contactbox">
+
+            <!-- wrapper zodat image & tekst flexen -->
+            <div class="big-contact-row">
+              
+              <!--DATA CONTAINER SPAN EFFECT-->
+              <div class="data-container">
+                <span class="btn">
+                  <img src="image.png" alt="contact img" class="contact-img-pfp height">
+                </span>
+              </div>
+
+              <div class="contact-text">
+                <img class="himynameiselenabeatrice" src="himynameiselenabeatrice.png" height="240px">
+              </div>
+            </div>
+            
+            <div class="contactinformatie"> 
+                <!-- mail met icoon -->
+              <div class="mail-row">
+                <img src="envelope.png" class="mail-icon" alt="mail icon">
+                <p>elenamanaila395@gmail.com</p>
+              </div>
+        
+              <!-- facebook met icoon -->
+              <div class="facebook-row">
+                <a href="https://www.instagram.com/elenatjuh_xx/" target="_blank"><img src="icons8-facebook-50.png" class="facebook-icon" alt="facebook icon"></a>
+                <a href="https://www.instagram.com/elenatjuh_xx/" target="_blank"><p>kapow_chaos</p></a></div>
+              </div>
+              <!-- insta met icoon -->
+              <div class="insta-row">
+                <a href="https://www.instagram.com/elenatjuh_xx/" target="_blank"><img src="instagram.png" class="insta-icon" alt="insta icon"></a>
+                <a href="https://www.instagram.com/elenatjuh_xx/" target="_blank"><p>elenatjuh_xx</p></a></div>
+              </div>
+            </div>
+
+
+
+        <div class="tv">
+          <img src="Zonder titel28_20250510111742.png" alt="tv">
+        </div>
+      </section>
+      
+      <!-- container vol met info als in talen, skills, ... -->
+      <div class="containermeinfo">
+        <div class="experience"><p>EXPERIENCE</p></div>
+        
+        <div class="textexperience1">
+            <div class="un"> <img src="Rectangle 2.png" style="height: 50px;"> </div>
+            <div> <p> <img src="Group 2 (1) 1.png" height="45px"> <br> 2025 - 2027 <br><br> ik zit te bidden dat ik in deze richting ga afstuderen </p> </div>
+        </div>
+
+        <div class="lines"> <img src="Group 1.png" style="height: 50px;"> </div>
+
+        <div class="textexperience2">
+          <div class="deux"> <img src="Rectangle 2.png" style="height: 50px;"> </div>
+          <div> <p> <img src="coderdojo.png" height="40px"> <br> 2024 - eind 2025 <br><br> ik leerde jongeren hoe ze moesten programmeren, van blokken-codes tot programmeertaal </p> </div>
+      </div>
+
+      <div class="lines"> <img src="Group 1.png" style="height: 50px;"> </div>
+
+      <div class="textexperience3">
+        <div class="deux"> <img src="Rectangle 2.png" style="height: 50px;"> </div>
+        <div> <p> <img src="coderdojo student 1.png" height="45px"> <br> 2018 - 2024 <br><br> dit had een fantastisch invloed in mijn ontwikkeling </p> </div>
+      </div> 
+
+        <!-- text abive img's 'n stuff'-->
+          <div class="mybabies">
+            <p>my babies</p>
+          </div>
+        <!-- GALLERY PART OF THE PAGE-->
+        <div class="scroll-container">
+          <img src="Schermafbeelding 2025-05-16 111745.png" style="height: 300px;">
+          <img src="Schermafbeelding 2025-05-16 111445.png" style="height: 300px;">
+          <img src="Schermafbeelding 2025-05-16 111704.png" style="height: 300px;">
+          <img src="Schermafbeelding 2025-05-16 111923.png" style="height: 300px;">
+        </div>
+
+        <div class="mini1">
+                <div class="myCV">
+                    <div class="blinkie1"><img src="blinkiesCafe-r7.gif" height="76px"></div>
+                    <div class="cv"><img src="CV.png" style="height: 800px;"></div>
+                </div>
+            </div>
+    </div>
+    
+
+  </main>
+
+  <!-- ZOOM ANIM SCRIPT -->
+  <script>
+    const intro = document.querySelector('.intro');
+    const homepage = document.querySelector('.homepage');
+  
+    intro.addEventListener('click', () => {
+      intro.classList.add('zoomed');
+  
+      setTimeout(() => {
+        intro.style.display = 'none';
+        homepage.classList.remove('hidden');
+        homepage.classList.add('show');
+        document.body.style.overflow = 'auto'; // 🧠 voeg dit toe
+      }, 1000);
+    });
+  </script>
+
+</body>
+</html>

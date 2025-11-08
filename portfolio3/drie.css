@@ -1,0 +1,309 @@
+/* === RESET & BASE === */
+* {
+    font-family: 'Rubik Mono One', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* ✅ legit */
+    /*outline: 1px dashed rgb(205, 50, 192);*/
+  }
+  
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #258ac9; /* of wat je wil */
+  }
+  body {
+    font-family: 'Rubik Mono One', sans-serif;
+
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body, html {
+    background-color: black;
+    font-family: sans-serif;
+    overflow: auto; /* scroll allowed na intro */
+    height: 100%; /* zorgt dat 100vh werkt normaal */
+    overflow-x: hidden; /* KILLS THE SCROLLBAR */
+
+  }
+  
+  
+  /* === INTRO IMAGE ZOOM === */
+  .intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    transition: transform 1s ease, opacity 1s ease;
+  }
+  
+  .intro.zoomed {
+    transform: scale(2);
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .intro img {
+    max-width: 80%;
+    max-height: 80%;
+    cursor: pointer;
+    transition: transform 1s ease;
+  }
+  
+  /* === HOMEPAGE === */
+  .homepage.hidden {
+    display: none;
+  }
+  
+  .homepage.show {
+    display: block;
+    animation: fadeIn 1s ease;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* === PORTFOLIO === */
+  .portfolio {
+    position: relative; /* container wordt anchor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    margin-bottom: 200px;
+    margin-top: -20px;
+
+  }
+  
+  .portfolio img {
+    display: flex;
+    height: 700px;
+  }
+  
+  .stargif {
+    position: absolute;
+    top: 50px;  /* waar je ‘m wil */
+    right: 50px;
+  }
+
+
+  .red-bar {
+    display: flex;
+    height: 50px;
+    background-color: #033f63;
+    width: 100%;
+    align-items: center; 
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+
+  
+  .buttons {
+    display: flex;
+    gap: 100px;
+    font-size: x-large;
+  }
+  
+  /* === CONTAINER SECTION === */
+  .container1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px 30px;
+    background: black;
+    min-height: 100vh; /* DIT IS BELANGRIJK */
+    /*margin-top: 100px;*/
+    margin-top: -400px;
+  }
+
+  .contactbox {
+    background-color: white;
+    border-radius: 1rem;
+    width: 500px;
+    padding: 2rem;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+.contactinformatie {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* ruimte tussen de rijen */
+  margin-top: 20px; /* optioneel, beetje ruimte onder die naam-image */
+}
+
+  
+  /* flex tussen grote img + tekstje */
+  .big-contact-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .contact-img-pfp {
+    width: 200px;
+    height: auto;
+    border-radius: 30px;
+  }
+  
+  .contact-text {
+    flex: 1;
+    font-size: 1rem;
+    color: black;
+  }
+
+
+
+.himynameiselenabeatrice {}
+
+  /* mail met klein icoontje */
+  .mail-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .mail-icon {
+    width: 20px;
+    height: 20px;
+  }
+    
+  /* insta met klein icoontje */
+  .insta-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .insta-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .facebook-row {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .facebook-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .tv img {
+    height: 500px;
+  }
+  
+
+  .containermeinfo {
+    display: flex;
+    align-self: center;
+    place-self: center;
+    background-color: white;
+    border-radius: 1rem;
+    width: 900px;
+    height: auto;
+    padding: 2rem;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .experience {
+    color: #033f63;
+    font-size: 80px;
+  }
+
+  .textexperience1 {
+    color: #033f63;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+.textexperience1 p {
+  margin-left: 20px;
+}
+
+  .textexperience2 {
+    color: #033f63;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -30px;
+  }
+.textexperience2 p {
+  margin-left: 20px;
+}
+  .textexperience3 {
+    color: #033f63;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -30px;
+  }
+.textexperience3 p {
+  margin-left: 20px;
+}
+  .un, .deux {
+    display: flex;
+    align-items: center; /* Center the star and text */
+    margin-bottom: 10px; /* Add consistent spacing */
+  }
+  .deux {
+    display: flex;
+  }
+ .lines {
+    margin-top: -35px;
+    margin-left: 19px;
+ }
+
+ div.scroll-container {
+  background-color: #033f63;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+  border-radius: 20px;
+
+}
+
+div.scroll-container img {
+  padding: 0px;
+  border-radius: 20px;
+}
+
+.mybabies {
+  display: flex;
+  color: #033f63;
+  font-size: xx-large;
+  margin-left: 20px;
+}
+
+.mini1 {
+  align-self: center;
+}
+
+.cv img{
+  display: block;
+  margin-top: 20px;
+  border-radius: 20px;
+}

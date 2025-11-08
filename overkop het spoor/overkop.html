@@ -1,0 +1,151 @@
+<html>
+    <head>
+        <title>overkop het spoor</title>
+        <!-- Add the Google Fonts link here -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="overkop.css">
+        <link rel="stylesheet" href="overkop.js">
+    </head>
+    <body>
+        <header>
+            <div class="overkoplogo"> 
+                <img src="overkoplogo.png" height="60">
+            </div>
+            <div class="title">
+                <p>OverKop Het Spoor!!1!</p>
+            </div>
+            <div class="instalogo">
+                <a href="https://www.instagram.com/overkop_het_spoor?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                <img src="instalogoOK.png" height="45px"> </a>
+            </div>
+            <div class="gang">
+                <img src="thomas1.png" height="65">
+                <img src="delfine.png" height="65">
+                <img src="yanti.png" height="65">
+                <img src="simon.png" height="65">
+                <img src="tatiana.png" height="65">
+            </div>
+            <div class="jhderoute">
+                <p>
+                <a href="https://www.instagram.com/jhderoute?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                jhderoute</a>
+                </p>
+            </div>
+        </header>
+
+        <div class="halfcircle1">
+            <img src="circle-in-circle-quarter-donut.png" height="150px">
+        </div>
+        <div class="halfcircle2">
+            <img src="circle-in-circle-quarter-donut.png" height="150px">
+        </div>
+        <div class="button-container">
+            <button class="myButton">CLICK ME!</button>
+        </div>
+        <div class="popupImage">
+            <img src="KEROPPI.png" alt="Pop-up Image" class="popupContent">
+        </div>
+    
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                // Testen of de knop goed wordt geladen
+                console.log("DOM is geladen!");
+                document.querySelector(".myButton").addEventListener("click", function() {
+                    console.log("Button clicked!"); // Log voor het klikken
+    
+                    const popup = document.querySelector(".popupImage");
+    
+                    // Zorg ervoor dat de afbeelding zichtbaar wordt
+                    popup.style.opacity = "1"; 
+                    popup.style.transform = "translateX(0)";  // Beweeg de afbeelding in beeld
+    
+                    // Optioneel: Na 3 seconden weer uit beeld zetten
+                    setTimeout(function() {
+                        console.log("Hiding the image!"); // Log na 3 seconden
+                        popup.style.transform = "translateX(100%)";  // Zet de afbeelding weer buiten beeld
+                        popup.style.opacity = "0";  // Verberg de afbeelding
+                    }, 3000); // Blijf 3 seconden zichtbaar
+                });
+            });
+        </script>
+       <!-- <script>
+            document.querySelector(".myButton").addEventListener("click", function() {
+                alert("Welcome to OverKop Het Spoor! 🎉");
+            });
+        </script> -->
+
+        <div class="text">
+            <h1>INFO!!</h1>
+        </div>
+
+        <div class="versiering1">
+            <img src="rondje met rondje.png" height="400px">
+        </div>            
+        <div class="versiering2">
+            <img src="diamond-medium-X-shape.png" height="300px">
+        </div>
+
+        <div class="container1">
+            <div class="img1">
+                <img src="img1.jpg" height="400px" alt="SPAGHETTI LOVEBALL">
+            </div>
+            <div class="text1">
+                <p>Hier bij <span class="highlight">OverKop Het Spoor</span> ben je iedere week welkom de <span class="highlight">woensdag 
+                    vanaf 14u tot 17u</span> en <span class="highlight">de donderdag van 16u tot 19u!!</span> Woensdag 
+                    sammen chillen in de zetels of donderdag samen lekker smullen van heelijke lekkernijen die jullie samen kunnen 
+                    koken, bakken, braden,... >:3</p>
+            </div>
+        </div>
+
+        <div class="versiering3">
+            <img src="shape-heart-round.png" height="300px">
+        </div>
+
+        <div class="container2">
+            <div class="text2">
+                <p>ER ZIJN WEEKPLANNINGEN, JA WEEKPLANNINGEN, SOM ZIJN ER ECHT ZIEKE 
+                    ACTIVITEITEN, ZOALS ESCAPEROOMS (ja srs er zijn escaperooms!!!) VERKLEDE, 
+                    TONEEL BEZOEKEN, WE ZIJN ZELFS EENS NR WALLIBY GEWEEST (check insta pg voor nog meer zieke 
+                    activiteiten 'n stuff!!!) VIA INSTA KAN JE ALTIJD GEUPDATE BLIJVEN VOOR EVENTUELE ACTIVITEITEN OF KOM ZELF 
+                    EENS NAAR HET OVERKOP <span class="highlight">KERKSTRAAT 121, 9900 EEKLO</span> EN GEEF ONS WAT IDEETJEZZZ!! 
+                    net als bv deze website die gemaakt is door een 15 jarige lielieputter :P </p>
+            </div> 
+            <div class="img2">
+                <img  src="weekplanning.jpg" height="400px" alt="WEEKPLANNING">
+            </div>
+        </div>
+
+        <div class="versiering4">
+            <img src="rondje met rondje.png" height="500px">
+        </div>
+
+        <div class="text">
+            <h1>FOTODROP!!</h1>
+        </div>
+
+        <div class="fotodrop1">
+            <div class="img3"> 
+                <img src="sumoworstelen.jpg" height="400px">
+            </div>
+            <div class="img3"> 
+                <img src="spaghetti.jpg" height="400px">
+            </div>
+            <div class="img3"> 
+                <img src="schaatsen.jpg" height="400px">
+            </div>
+        </div>
+
+        <div class="happy">
+            <div class="img4">
+                <img src="happy picture.jpg" height="400px">
+            </div>
+            <div class="text4">
+                <p>Hier wordt er gezorgt voor jongeren, jongvolwassenen en mensen in het algemeen, ze steunen hen en beiden
+                     hun hulp aan. Geloof meh deze plek doet echt veel voor ons :P 
+                    <br>(JA KWNI WAK HIER MOE SCHRIJVE, OK??)</p>
+            </div>
+        </div>
+
+    </body>
+</html>

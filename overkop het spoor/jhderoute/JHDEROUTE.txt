@@ -1,0 +1,3 @@
+JHDEROUTE
+Dus een koppeling make, aparte web schrijven vr 
+jhderoute en dus zo die koppeling gebruike om van web nr web te surfe.
